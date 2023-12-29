@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body{
+	background-color: black;
+	color: white;
+}
+
+
+.container h2{
+	display: grid;
+	place-items: center; 
+	padding: 10px;
+}
