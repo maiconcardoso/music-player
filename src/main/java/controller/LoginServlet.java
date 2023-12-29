@@ -15,8 +15,14 @@ public class LoginServlet extends HttpServlet {
     public LoginServlet() {super();}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Recebido " + request.getParameter("txtname"));
-		System.out.println("Recebido " + request.getParameter("txtpassword"));
+		String name = request.getParameter("txtname");
+		String password = request.getParameter("txtpassword");
+		
+		if (name.equals("maiconcardoso@hotmail.com") && password.equals("senha@123")) {
+			response.sendRedirect("account.jsp");
+		} else {
+			response.sendRedirect("error.jsp");
+		}
 	}
 
 }
