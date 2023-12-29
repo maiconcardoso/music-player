@@ -2,12 +2,14 @@ package model;
 
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.List;
 
 public class Playlist implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private int id;
 	private String title;
+	private List<Music> music;
 	
 	public Playlist(int id, String title) {
 		this.id = id;
@@ -29,6 +31,13 @@ public class Playlist implements Serializable{
 	}
 	public String getTitle() {
 		return this.title;
+	}
+	
+	public void setMusic(List<Music> music) {
+		this.music = music;
+	}
+	public List<Music> getMusic() {
+		return this.music;
 	}
 
 	@Override
