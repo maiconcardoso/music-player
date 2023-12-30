@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 body{
-	background-color: black;
+	background-color: #363636;
+	color: white;
+}
+.form-text{
 	color: white;
 }
 
